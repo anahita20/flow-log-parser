@@ -1,11 +1,11 @@
 # Flow Logs Parser
 
-#### Objective
+### Objective
 The **output file** contains two sections:
    - **Tag Counts**: The number of times each tag appears in the flow logs.
    - **Port/Protocol Combination Counts**: The count of each unique `dstport, protocol` combination.
 
-#### Assumptions
+### Assumptions
 1. Only the **default log format** (version 2) is supported.
 2. The **flow log file size** can be up to 10 MB.
 4. **Case insensitivity** is applied to the protocol names during the matching process.
@@ -35,7 +35,7 @@ The **output file** contains two sections:
     ```
     python flow_log_parser.py <PROTOCOL_FILE> <MAPPING_FILE> <INPUT_FILE> <OUTPUT_FILE> 
     ```
-#### Tests
+### Tests
 
 1. Basic functionality: Verified that log entries are correctly mapped to tags.
 2. Edge cases:
