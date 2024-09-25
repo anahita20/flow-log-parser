@@ -39,8 +39,8 @@ The **output file** contains two sections:
 
 1. Basic functionality: Verified that log entries are correctly mapped to tags.
 2. Edge cases:
--- Unmatched entries are properly marked as "Untagged".
--- Case insensitivity is correctly applied during tag mapping.
+- Unmatched entries are properly marked as "Untagged".
+- Case insensitivity is correctly applied during tag mapping.
 3. Performance: The program was tested with log files of different sizes, up to 10MB.
 4. Invalid entries: The program skips malformed or incomplete log entries. 
 
