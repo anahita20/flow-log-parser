@@ -7,7 +7,7 @@ class Log:
         attributes = log_entry.split()
         
         #Check for valid log format
-        if len(attributes) < 14:
+        if len(attributes) < 14 or len(attributes) > 14:
             self.valid = False  
             return
         
